@@ -1,0 +1,15 @@
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.csproj.AssemblyReference.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.AssemblyInfoInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.AssemblyInfo.cs
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\MeltingAlgorithm.exe
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\MeltingAlgorithm.deps.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\MeltingAlgorithm.runtimeconfig.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\MeltingAlgorithm.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\MeltingAlgorithm.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\refint\MeltingAlgorithm.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\MeltingAlgorithm.genruntimeconfig.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\ref\MeltingAlgorithm.dll

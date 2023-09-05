@@ -1,0 +1,30 @@
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.exe
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.deps.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.runtimeconfig.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.csproj.AssemblyReference.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.AssemblyInfoInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.AssemblyInfo.cs
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\refint\Projekt AI.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.genruntimeconfig.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\MeltingAlgorithm\MeltingAlgorithm\obj\Debug\net6.0\ref\Projekt AI.dll
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.exe
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.deps.json
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.runtimeconfig.json
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.dll
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\bin\Debug\net6.0\Projekt AI.pdb
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.csproj.AssemblyReference.cache
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.AssemblyInfoInputs.cache
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.AssemblyInfo.cs
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.csproj.CoreCompileInputs.cache
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.dll
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\refint\Projekt AI.dll
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.pdb
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\Projekt AI.genruntimeconfig.cache
+C:\Users\dawid\Desktop\New folder (2)\MeltingAlgorithm\obj\Debug\net6.0\ref\Projekt AI.dll

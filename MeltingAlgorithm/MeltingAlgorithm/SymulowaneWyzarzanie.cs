@@ -1,4 +1,4 @@
-using Projekt_AI;
+﻿using Projekt_AI;
 using System;
 namespace Projekt_AI
 {
@@ -9,53 +9,75 @@ namespace Projekt_AI
             List<Procesor> maszyna = new List<Procesor>(); // deklaracja kolekcji, gdzie przechowywane będą procesory
             List<Zadanie> kopiaZadania = new List<Zadanie>(); // w tej funkcji będę pracował na kopii listy zadań
             foreach (Zadanie zadanie in zadania) { kopiaZadania.Add(zadanie.Clone()); } // głęboka kopia listy zadań
-            List<Zadanie> kolejka = new List<Zadanie>() ; // do tej listy trafią te zadania, które muszą poczekać na rozpoczęcie się innego zadania
+            List<Zadanie> kolejka = new List<Zadanie>(); // do tej listy trafią te zadania, które muszą poczekać na rozpoczęcie się innego zadania
             int ilośćZadań = zadania.Count();
-            for (int i = 0; i < liczbaProcesorów; i++) maszyna.Add(new Procesor(new List<Zadanie>() { },0)); 
+            for (int i = 0; i < liczbaProcesorów; i++) maszyna.Add(new Procesor(new List<Zadanie>() { }, new List<int>() { }, 0));
             int minimalnyCzas = 0;
-
-            do {
+            do
+            {
                 foreach (Zadanie zadanie in kopiaZadania) // dla każdego zadania z listy przeglądam każdy procesor i sprawdzam czy opłaca się lub czy można uruchomić na nim dane zadanie
                 {
                     foreach (Procesor procesor in maszyna)
                     {
                         minimalnyCzas = maszyna.Min(procesor => procesor.zajętyCzas);
-                        if ((procesor.zajętyCzas <= minimalnyCzas) && !(zadanie.PoprzednieZadanie.HasValue))
+
+                        if ((procesor.zajętyCzas != minimalnyCzas) && (zadanie.PoprzednieZadanie.HasValue) && (zadanie.PrzypisaneZadanie == false) && (procesor.listaIdZadań.Contains((int)zadanie.PoprzednieZadanie)))
                         {
                             procesor.listaZadań.Add(zadanie);
+                            kolejka.Remove(zadanie);
+                            procesor.listaIdZadań.Add(zadanie.IdZadania);
+                            zadanie.PrzypisaneZadanie = true;
                             procesor.zajętyCzas += zadanie.CzasWykonaniaZadania;
                             ilośćZadań--;
-                            
                             break;
                         }
-
-                        else if ((procesor.zajętyCzas <= minimalnyCzas) && (zadanie.PoprzednieZadanie.HasValue))
-                        {
-                            foreach (Zadanie zadanieZListy in procesor.listaZadań.ToList())
-                            {
-                                if (zadanieZListy.IdZadania == zadanie.PoprzednieZadanie)
-                                {
-                                    procesor.listaZadań.Add(zadanie);
-                                    procesor.zajętyCzas += zadanie.CzasWykonaniaZadania;
-                                    ilośćZadań--;
-                                    break;
-                                }
-                            }
-
-                        }
+                        else if (procesor.zajętyCzas != minimalnyCzas)
+                            continue;
                         else
                         {
-                            kolejka.Add(zadanie);
+                            if (!(zadanie.PoprzednieZadanie.HasValue) && (zadanie.PrzypisaneZadanie == false))
+                            {
+                                procesor.listaZadań.Add(zadanie);
+                                kolejka.Remove(zadanie);
+                                procesor.listaIdZadań.Add(zadanie.IdZadania);
+                                zadanie.PrzypisaneZadanie = true;
+                                procesor.zajętyCzas += zadanie.CzasWykonaniaZadania;
+                                ilośćZadań--;
+                                break;
+                            }
+                            else if ((zadanie.PoprzednieZadanie.HasValue) && (zadanie.PrzypisaneZadanie == false) && (procesor.listaIdZadań.Contains((int)zadanie.PoprzednieZadanie)))
+                            {
+                                //foreach (Zadanie zadanieZListy in procesor.listaZadań.ToList())
+                                //{
+                                //    if (zadanieZListy.IdZadania == zadanie.PoprzednieZadanie)
+                                //    {
+                                procesor.listaZadań.Add(zadanie);
+                                kolejka.Remove(zadanie);
+                                procesor.listaIdZadań.Add(zadanie.IdZadania);
+                                zadanie.PrzypisaneZadanie = true;
+                                procesor.zajętyCzas += zadanie.CzasWykonaniaZadania;
+                                ilośćZadań--;
+                                break;
+                                //    }
+                                //}
+                            }
+                            else
+                            {
+                                if (kolejka.Contains(zadanie))
+                                    continue;
+                                else
+                                    kolejka.Add(zadanie);
+                            }
                         }
-                        
                     }
-
                 }
                 kopiaZadania.Clear();
-                foreach (Zadanie zadanie in kolejka) { kopiaZadania.Add(zadanie.Clone()); }
+                foreach (Zadanie zadanie in kolejka)
+                {
+                    kopiaZadania.Add(zadanie.Clone());
+                }
                 kolejka.Clear();
-
-
+                ilośćZadań = kopiaZadania.Count();
                 //for (int i = 0; i < liczbaProcesorów; i++)
                 //{
                 //    Console.WriteLine("Procesor {0}: Czas sumaryczny: {1}", i, maszyna[i].zajętyCzas);
@@ -64,8 +86,6 @@ namespace Projekt_AI
                 //}
             }
             while (ilośćZadań > 0);
-            
-
             return maszyna;
             //return x * x * x * x - 2 * x * x + x - 5;   // badana funkcja, x^4 - 2x^2 + x - 5
         }
@@ -75,11 +95,9 @@ namespace Projekt_AI
 
             double T = 100.0;                           // zmienna obrazująca temperaturę, jedna ze zmiennych wejściowych
             double Tmin = 0.01;                         // zmienna będąca kryterium zatrzymania
-            double wspolczynnikChlodzenia = 0.96;       // im bliżej 1, tym wolniej "stygnie"
-            //double minimumPrzedzialu = -10;             // wpisane na sztywno, można potraktować jako domyślne
-            //double maksimumPrzedzialu = 10;             // jw
-            
-
+            double wspolczynnikChlodzenia = 0.99;       // im bliżej 1, tym wolniej "stygnie"
+                                                        //double minimumPrzedzialu = -10;             // wpisane na sztywno, można potraktować jako domyślne
+                                                        //double maksimumPrzedzialu = 10;             // jw
             Random random = new Random();
             List<Zadanie> nowaListaZadań = new List<Zadanie>();
             foreach (Zadanie zadanie in Zadania) { nowaListaZadań.Add(zadanie.Clone()); }
@@ -111,7 +129,7 @@ namespace Projekt_AI
 
                 if (roznica < 0 || Math.Exp(-roznica / T) > random.NextDouble())
                 {
-                    
+
                     Zadania = nowaListaZadań;
                 }
 
@@ -122,12 +140,22 @@ namespace Projekt_AI
                 }
 
                 T *= wspolczynnikChlodzenia;
+
+                //for (int i = 0; i < liczbaProcesorów; i++)
+                //{
+                //    Console.WriteLine("Procesor {0}: Czas sumaryczny: {1}", i, maszynaX[i].zajętyCzas);
+                //    foreach (Zadanie zadanie in maszynaX[i].listaZadań)
+                //        Console.WriteLine("\t{0} | {1} | {2}", zadanie.IdZadania, zadanie.CzasWykonaniaZadania, zadanie.PoprzednieZadanie);
+                //}
+
+                //Thread.Sleep(5000);
+                //Console.Clear();
             }
 
             for (int i = 0; i < liczbaProcesorów; i++)
             {
                 Console.WriteLine("Procesor {0}: Czas sumaryczny: {1}", i, maszynaX[i].zajętyCzas);
-                foreach(Zadanie zadanie in maszynaX[i].listaZadań)
+                foreach (Zadanie zadanie in maszynaX[i].listaZadań)
                     Console.WriteLine("\t{0} | {1} | {2}", zadanie.IdZadania, zadanie.CzasWykonaniaZadania, zadanie.PoprzednieZadanie);
             }
             //Console.WriteLine("Minimum: {0}, Wartość w tym minimum = {1}", minimumFunkcji, wartoscWMinimum);
@@ -176,13 +204,16 @@ namespace Projekt_AI
 
         public static void Shuffle<T>(this IList<T> values)
         {
-            for (int i = values.Count - 1; i > 0; i--)
+            int n = values.Count;
+            while (n > 1)
             {
-                int k = rand.Next(i + 1);
+                n--;
+                int k = rand.Next(n + 1);
                 T value = values[k];
-                values[k] = values[i];
-                values[i] = value;
+                values[k] = values[n];
+                values[n] = value;
             }
+
         }
     }
 }

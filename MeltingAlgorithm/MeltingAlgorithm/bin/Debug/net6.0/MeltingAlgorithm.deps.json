@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MeltingAlgorithm/1.0.0": {
+        "runtime": {
+          "MeltingAlgorithm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MeltingAlgorithm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
