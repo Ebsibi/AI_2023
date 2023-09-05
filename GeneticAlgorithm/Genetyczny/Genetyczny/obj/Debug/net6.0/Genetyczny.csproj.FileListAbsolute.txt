@@ -1,0 +1,17 @@
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\Genetyczny.exe
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\Genetyczny.deps.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\Genetyczny.runtimeconfig.json
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\Genetyczny.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\Genetyczny.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.csproj.AssemblyReference.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.AssemblyInfoInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.AssemblyInfo.cs
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\refint\Genetyczny.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.pdb
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.genruntimeconfig.cache
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\ref\Genetyczny.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\bin\Debug\net6.0\GAF.Core.20.dll
+C:\Users\Dawid\OneDrive\studia\sztuczna inteligencja\Nowy folder\Genetyczny\Genetyczny\obj\Debug\net6.0\Genetyczny.csproj.CopyComplete
